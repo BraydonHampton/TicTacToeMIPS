@@ -1,0 +1,27 @@
+User enters n
+Size = n*n
+
+init array board[size] with ' ' or 2 in middle
+
+print Board
+
+	char turn = 'X' or 1
+MAINLOOP:
+		if (i == size) goto DRAW
+		
+		if (turn == 1) player_move
+		else
+		{
+			if (bot_win) EXITELSE
+			if (bot_block) EXITELSE
+			bot_default
+EXITELSE}
+
+print Board
+turnSwap
+if gameover() ENDMAINLOOP
+DRAW:
+	setGameToDraw
+	
+ENDMAINLOOP:
+		print winner
